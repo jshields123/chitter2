@@ -10,7 +10,7 @@ class Chitter < Sinatra::Base
   end
 
   get '/' do
-    'Chitter'
+    redirect 'tweets'
   end
 
   get '/tweets' do

@@ -1,5 +1,9 @@
+<h1>Welcome to chitter, like twitter but with less trolls</h1>
+
 <ul>
-    <% @tweets.each do |tweet| %>
+    <% @tweets.reverse.each do |tweet| %>
     <li> <%= tweet %></li>
     <% end %>
 </ul>
+
+<a class='button' href="/tweets/new" >Create tweet!</a>
