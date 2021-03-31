@@ -1,0 +1,1 @@
+CREATE TABLE tweets(id SERIAL PRIMARY KEY, content VARCHAR(120));

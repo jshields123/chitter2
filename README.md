@@ -11,7 +11,23 @@ Map out domain model as per link image. https://betterexplained.com/wp-content/u
 
 To solve first user story, create a feature test and pass with simplest code.
 
-create a Chitter class with message method
+to set up db.
+
+- Connect to psql
+- Create the database using the psql command CREATE DATABASE chitter2;
+- Connect to the database using the pqsl command \c chitter2;
+- un the query we have saved in the file create_tweets_table.sql
+
+
+Created feature test for viewing Chitter and passed with basic "Chitter" show in local host to test connection.
+
+Created feature test for viewing hardcoded tweets and passed by creating a tweet.rb file with Tweet class and also a views folder to display the tweets on the tweets route.
+
+Created a database with table to save the tweets in.
+
+Created a test for creating a tweet 
+
+
 
 Feel free to use Google, your notes, books, etc. but work on your own
 If you refer to the solution of another coach or student, please put a link to that in your README

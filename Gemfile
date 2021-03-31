@@ -12,4 +12,5 @@ gem 'rspec'
 gem 'capybara'
 gem 'sinatra-contrib'
 gem 'shotgun'
+gem 'pg'
 
