@@ -13,8 +13,16 @@ class Chitter < Sinatra::Base
 
     get '/tweets' do
         @tweets = Tweet.all
-        erb :tweets
+        erb :'tweets/index'
     end
 
+    get '/tweets/new' do
+        erb :'tweets/new'
+    end
+    
+    post '/tweets' do
+        Tweet.create(content: params[:content])
+        redirect '/tweets'
+    end
     run! if app_file ==$0
 end
