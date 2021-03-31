@@ -24,5 +24,6 @@ class Chitter < Sinatra::Base
         Tweet.create(content: params[:content])
         redirect '/tweets'
     end
+
     run! if app_file ==$0
 end

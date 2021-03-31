@@ -7,8 +7,8 @@
           1,
           1,
           1,
-          0,
-          0,
+          1,
+          1,
           null,
           null
         ]
@@ -25,6 +25,8 @@
       },
       "/Users/jackshields/Desktop/projects/chitter2/spec/features/view_tweets_spec.rb": {
         "lines": [
+          1,
+          null,
           1,
           1,
           1,
@@ -49,14 +51,24 @@
           null,
           1,
           1,
+          1,
           null,
           1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1617202408
+    "timestamp": 1617211145
   }
 }
