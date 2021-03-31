@@ -1,6 +1,18 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/jackshields/Desktop/projects/chitter2/spec/features/create_tweet_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
       "/Users/jackshields/Desktop/projects/chitter2/spec/features/view_chitter_spec.rb": {
         "lines": [
           1,
@@ -38,6 +50,6 @@
         ]
       }
     },
-    "timestamp": 1617185433
+    "timestamp": 1617185854
   }
 }
