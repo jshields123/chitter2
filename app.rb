@@ -3,6 +3,7 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
 require './lib/tweet'
+require './lib/db_connection_setup'
 
 class Chitter < Sinatra::Base
   configure :development do

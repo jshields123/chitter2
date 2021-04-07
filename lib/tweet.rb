@@ -3,22 +3,32 @@
 require 'pg'
 
 class Tweet
-  def self.create(content:)
-    connection = if ENV['ENVIRONMENT'] == 'test'
-                   PG.connect(dbname: 'chitter2_test')
-                 else
-                   PG.connect(dbname: 'chitter2')
-                 end
-    result = connection.exec("INSERT INTO tweets (content) VALUES('#{content}');")
-  end
+  attr_reader :id, :content, :created_at
 
-  def self.all
+    def initialize(id:, content:, created_at:)
+        @id = id
+        @content = content
+        @created_at = created_at
+    end
+
+    def self.all
+      connection = if ENV['ENVIRONMENT'] == 'test'
+                     PG.connect(dbname: 'chitter2_test')
+                   else
+                     PG.connect(dbname: 'chitter2')
+                   end
+      result = connection.exec('SELECT * FROM tweets ORDER by created_at desc;')
+      result.map { |tweet| tweet['content'] }
+    end
+
+    def self.create(content:)
     connection = if ENV['ENVIRONMENT'] == 'test'
                    PG.connect(dbname: 'chitter2_test')
                  else
                    PG.connect(dbname: 'chitter2')
                  end
-    result = connection.exec('SELECT * FROM tweets;')
-    result.map { |tweet| tweet['content'] }
-  end
+      result = connection.exec("INSERT INTO tweets (content) VALUES('#{content}') RETURNING id, content, created_at;")
+    end
+
+  
 end
