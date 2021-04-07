@@ -1,7 +1,5 @@
 # chitter2
 Chitter Challenge
-User stories -As a Maker. So that I can let people know what I am doing
-I want to post a tweet to chitter
 
 PLAN
 
@@ -16,7 +14,7 @@ to set up db.
 - Connect to psql
 - Create the database using the psql command CREATE DATABASE chitter2;
 - Connect to the database using the pqsl command \c chitter2;
-- un the query we have saved in the file create_tweets_table.sql
+- run the query we have saved in the file create_tweets_table.sql
 
 
 Created feature test for viewing Chitter and passed with basic "Chitter" show in local host to test connection.
@@ -26,17 +24,6 @@ Created feature test for viewing hardcoded tweets and passed by creating a tweet
 Created a database with table to save the tweets in.
 
 Created a test for creating a tweet 
-
-
-
-Feel free to use Google, your notes, books, etc. but work on your own
-If you refer to the solution of another coach or student, please put a link to that in your README
-If you have a partial solution, still check in a partial solution
-You must submit a pull request to this repo with your code by 9am Monday morning
-Challenge:
-As usual please start by forking this repo.
-
-We are going to write a small Twitter clone that will allow the users to post messages to a public stream.
 
 Features:
 STRAIGHT UP
